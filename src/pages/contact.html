@@ -1,0 +1,63 @@
+<section class="page-hero plain">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / Contact</div>
+    <span class="eyebrow">Book a free design consult</span>
+    <h1>Tell us about your <em class="acc">room</em>.</h1>
+    <p class="lede">Fill in a few details and we’ll call you within one business day to arrange a time to visit.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="wrap contact-grid">
+    <form class="form" id="quote-form" novalidate>
+      <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="f-suburb">Suburb</label><input id="f-suburb" name="suburb" autocomplete="address-level2" placeholder="e.g. Hawthorn"></div>
+      <fieldset class="full" style="border:0;padding:0;margin:0">
+        <legend style="font-size:.85rem;font-weight:700;margin-bottom:7px">What are you renovating?</legend>
+        <div class="radio-row">
+          <label><input type="radio" name="room" value="kitchen" checked> Kitchen</label>
+          <label><input type="radio" name="room" value="bathroom"> Bathroom</label>
+          <label><input type="radio" name="room" value="ensuite"> Ensuite</label>
+          <label><input type="radio" name="room" value="multiple"> More than one room</label>
+        </div>
+      </fieldset>
+      <div class="full">
+        <label for="f-budget">Rough budget</label>
+        <select id="f-budget" name="budget">
+          <option>Not sure yet</option>
+          <option>Under $30k</option>
+          <option>$30k – $50k</option>
+          <option>$50k – $80k</option>
+          <option>$80k +</option>
+        </select>
+      </div>
+      <div class="full"><label for="f-msg">Tell us a bit about the project</label><textarea id="f-msg" name="message" placeholder="What you'd like to change, when you're hoping to start, anything that bugs you about the current room…"></textarea></div>
+      <div class="full"><button class="btn btn-primary" type="submit">Request my free consult</button></div>
+      <p class="form-status" role="status" tabindex="-1">Thanks! This is a portfolio demo site, so your message wasn’t sent anywhere. On a live site, this is where the enquiry would go straight to the business’s inbox or CRM.</p>
+      <p class="form-note">We reply within one business day. We never share your details.</p>
+    </form>
+
+    <aside>
+      <div class="info-block">
+        <h3>Call or email</h3>
+        <p><a href="tel:{{PHONE_HREF}}">{{PHONE}}</a><br><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      </div>
+      <div class="info-block">
+        <h3>Office hours</h3>
+        <p>Monday – Friday, 7:30am – 5pm<br>Saturday showroom visits by appointment</p>
+      </div>
+      <div class="info-block">
+        <h3>Workshop &amp; sample room</h3>
+        <p>Kew, VIC 3101, by appointment</p>
+      </div>
+      <div class="info-block">
+        <h3>Where we work</h3>
+        <ul class="suburbs">
+          <li>Hawthorn</li><li>Kew</li><li>Camberwell</li><li>Canterbury</li><li>Surrey Hills</li><li>Mont Albert</li><li>Balwyn</li><li>Balwyn North</li><li>Box Hill</li><li>Doncaster</li><li>Templestowe</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
